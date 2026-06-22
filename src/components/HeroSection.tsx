@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ChevronDown } from "lucide-react";
 const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1920&q=80&auto=format&fit=crop";
 const floatingParticles = Array.from({ length: 20 }, (_, i) => ({
     id: i,
     size: Math.random() * 3 + 1,
