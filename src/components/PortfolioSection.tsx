@@ -233,7 +233,7 @@ export default function PortfolioSection() {
               initial={{ scale: 0.85, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.85, opacity: 0 }}
-              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.4 }}
               className="relative max-w-4xl w-full rounded-2xl overflow-hidden border border-white/10"
               onClick={(e) => e.stopPropagation()}
             >

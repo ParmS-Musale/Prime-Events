@@ -90,7 +90,7 @@ export default function WhyUsSection() {
               key={reason.title}
               initial={{ opacity: 0, x: -40 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.7, delay: 0.1 + i * 0.12, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.7, delay: 0.1 + i * 0.12 }}
               className="flex items-start gap-8 py-9 border-b border-white/5 group hover:bg-white/[0.02] transition-all duration-300 px-4 rounded-xl cursor-default"
             >
               {/* Number */}

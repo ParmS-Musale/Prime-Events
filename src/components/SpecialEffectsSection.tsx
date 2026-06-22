@@ -97,7 +97,7 @@ export default function SpecialEffectsSection() {
                 key={effect.title}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, delay: 0.15 + i * 0.15, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.8, delay: 0.15 + i * 0.15 }}
                 className="group relative overflow-hidden rounded-3xl border border-white/8 hover:border-[#D4AF37]/25 transition-all duration-700 cursor-default"
               >
                 {/* Background Image */}

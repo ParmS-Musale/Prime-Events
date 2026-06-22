@@ -97,7 +97,7 @@ export default function ProcessSection() {
                   key={step.title}
                   initial={{ opacity: 0, x: isLeft ? -60 : 60 }}
                   animate={inView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.8, delay: 0.15 + i * 0.15, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ duration: 0.8, delay: 0.15 + i * 0.15 }}
                   className={`flex flex-col lg:flex-row items-center gap-8 ${isLeft ? "lg:flex-row" : "lg:flex-row-reverse"}`}
                 >
                   {/* Content Card */}
