@@ -4,82 +4,25 @@ import { useRef, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 
-const categories = ["All", "Weddings", "Birthdays", "Baby Showers", "Corporate", "Themes"];
+const categories = ["All", "Weddings", "Birthdays", "Baby Showers", "Corporate", "Themes", "Decor", "Traditional"];
 
 const portfolioItems = [
-  {
-    id: 1,
-    category: "Weddings",
-    title: "The Grand Estate Gala",
-    subtitle: "Luxury Wedding · 450 Guests",
-    img: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80&auto=format&fit=crop",
-    tall: true,
-  },
-  {
-    id: 2,
-    category: "Birthdays",
-    title: "Noir & Gold 40th",
-    subtitle: "Milestone Birthday · 120 Guests",
-    img: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&q=80&auto=format&fit=crop",
-    tall: false,
-  },
-  {
-    id: 3,
-    category: "Corporate",
-    title: "Prestige Annual Gala",
-    subtitle: "Corporate Event · 300 Guests",
-    img: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=80&auto=format&fit=crop",
-    tall: false,
-  },
-  {
-    id: 4,
-    category: "Themes",
-    title: "Enchanted Forest",
-    subtitle: "Theme Party · 80 Guests",
-    img: "https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?w=600&q=80&auto=format&fit=crop",
-    tall: true,
-  },
-  {
-    id: 5,
-    category: "Weddings",
-    title: "Royal Haveli Wedding",
-    subtitle: "Heritage Wedding · 600 Guests",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop",
-    tall: false,
-  },
-  {
-    id: 6,
-    category: "Baby Showers",
-    title: "Golden Arrival",
-    subtitle: "Baby Shower · 60 Guests",
-    img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80&auto=format&fit=crop",
-    tall: false,
-  },
-  {
-    id: 7,
-    category: "Corporate",
-    title: "Summit Leadership Forum",
-    subtitle: "Conference · 500 Attendees",
-    img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80&auto=format&fit=crop",
-    tall: true,
-  },
-  {
-    id: 8,
-    category: "Birthdays",
-    title: "Princess Garden Party",
-    subtitle: "Children's Birthday · 45 Guests",
-    img: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80&auto=format&fit=crop",
-    tall: false,
-  },
-  {
-    id: 9,
-    category: "Weddings",
-    title: "Ivory & Champagne Affair",
-    subtitle: "Destination Wedding · 200 Guests",
-    img: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&q=80&auto=format&fit=crop",
-    tall: false,
-  },
-];
+  ...Array.from({ length: 4 }, (_, i) => ({ category: "Weddings", img: `/assets/wedding${i + 1}.jpeg` })),
+  ...Array.from({ length: 7 }, (_, i) => ({ category: "Birthdays", img: `/assets/Birthday${i + 1}.jpeg` })),
+  ...Array.from({ length: 6 }, (_, i) => ({ category: "Baby Showers", img: `/assets/Baby${i + 1}.jpeg` })),
+  ...Array.from({ length: 3 }, (_, i) => ({ category: "Corporate", img: `/assets/corporate${i + 1}.png` })),
+  ...Array.from({ length: 2 }, (_, i) => ({ category: "Themes", img: `/assets/theme${i + 1}.png` })),
+  ...Array.from({ length: 3 }, (_, i) => ({ category: "Traditional", img: `/assets/Rangoli${i + 1}.jpeg` })),
+  ...Array.from({ length: 11 }, (_, i) => ({ category: "Traditional", img: `/assets/saptpadi${i + 1}.jpeg` })),
+  ...Array.from({ length: 12 }, (_, i) => ({ category: "Decor", img: `/assets/flower${i + 1}.jpeg` })),
+].map((item, i) => ({
+  id: i + 1,
+  category: item.category,
+  title: `Premium ${item.category} Showcase ${i + 1}`,
+  subtitle: `Luxury Execution`,
+  img: item.img,
+  tall: i % 3 === 0,
+}));
 
 export default function PortfolioSection() {
   const ref = useRef(null);

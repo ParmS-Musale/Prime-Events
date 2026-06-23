@@ -4,8 +4,8 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { Phone, Mail, MapPin, MessageCircle, Send, CheckCircle } from "lucide-react";
 
-const WHATSAPP_NUMBER = "919999999999";
-const PHONE_NUMBER = "+91 99999 99999";
+const WHATSAPP_NUMBER = "8010671447";
+const PHONE_NUMBER = "+91 8010671447";
 const EMAIL = "hello@primeevents.in";
 
 export default function ContactSection() {

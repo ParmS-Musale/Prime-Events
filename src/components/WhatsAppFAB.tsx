@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X, Phone } from "lucide-react";
 
-const WHATSAPP_NUMBER = "919999999999";
-const PHONE_NUMBER = "+919999999999";
+const WHATSAPP_NUMBER = "8010671447";
+const PHONE_NUMBER = "+8010671447";
 
 export default function WhatsAppFAB() {
   const [visible, setVisible] = useState(false);
@@ -67,9 +67,8 @@ export default function WhatsAppFAB() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ type: "spring", stiffness: 260, damping: 20 }}
         onClick={() => setExpanded((e) => !e)}
-        className={`relative w-14 h-14 rounded-full flex items-center justify-center shadow-gold transition-all duration-300 ${
-          expanded ? "bg-[#1F1F1F] border border-white/10" : "bg-green-500 shadow-[0_0_20px_rgba(34,197,94,0.3)]"
-        }`}
+        className={`relative w-14 h-14 rounded-full flex items-center justify-center shadow-gold transition-all duration-300 ${expanded ? "bg-[#1F1F1F] border border-white/10" : "bg-green-500 shadow-[0_0_20px_rgba(34,197,94,0.3)]"
+          }`}
         aria-label="Contact options"
       >
         <AnimatePresence mode="wait">

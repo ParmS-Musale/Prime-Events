@@ -92,6 +92,18 @@ const services = [
     desc: "End-to-end event management — vendor coordination, timeline mastery, on-the-day execution — flawlessly handled.",
     tag: null,
   },
+  {
+    icon: Flower2,
+    title: "Original Flower Decoration",
+    desc: "Exquisite, fresh floral arrangements and setups, tailored to elevate the beauty and fragrance of your event space.",
+    tag: "Popular",
+  },
+  {
+    icon: Palette,
+    title: "Saptpadi & Rangoli",
+    desc: "Traditional elegance meets precision with beautifully crafted vibrant Rangolis and perfectly arranged Saptpadi setups.",
+    tag: "Traditional",
+  },
 ];
 
 const cardVariants = {

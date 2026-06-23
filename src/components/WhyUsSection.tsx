@@ -150,7 +150,7 @@ export default function WhyUsSection() {
         </div>
         <div className="flex gap-4 flex-shrink-0">
           <a href="#contact" className="btn-primary">Start Planning</a>
-          <a href="https://wa.me/919999999999" target="_blank" rel="noreferrer" className="btn-outline">
+          <a href="https://wa.me/8010671447" target="_blank" rel="noreferrer" className="btn-outline">
             WhatsApp Us
           </a>
         </div>

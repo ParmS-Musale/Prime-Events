@@ -98,14 +98,14 @@ export default function Footer() {
 
             {/* WhatsApp mini CTA */}
             <a
-              href="https://wa.me/919999999999"
+              href="https://wa.me/8010671447"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-4 py-2.5 text-sm text-green-400 hover:bg-green-500/20 transition-colors duration-300 w-fit"
               style={{ fontFamily: "var(--font-inter)" }}
             >
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              WhatsApp: +91 99999 99999
+              WhatsApp: +91 8010671447
             </a>
           </div>
 
@@ -159,7 +159,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-4 text-sm text-[#d0c5af]" style={{ fontFamily: "var(--font-inter)" }}>
               <li>
                 <span className="block text-[10px] text-[#99907c] uppercase tracking-wider mb-1">Phone</span>
-                <a href="tel:+919999999999" className="hover:text-[#F2CA50] transition-colors">+91 99999 99999</a>
+                <a href="tel:+8010671447" className="hover:text-[#F2CA50] transition-colors">+91 8010671447</a>
               </li>
               <li>
                 <span className="block text-[10px] text-[#99907c] uppercase tracking-wider mb-1">Email</span>

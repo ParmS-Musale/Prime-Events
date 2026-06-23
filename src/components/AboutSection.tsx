@@ -11,23 +11,23 @@ const stats = [
   { icon: Star, num: "100%", label: "Client Satisfaction" },
 ];
 
-const team = [
-  {
-    name: "Ravi Sharma",
-    role: "Founder & Creative Director",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80&auto=format&fit=crop",
-  },
-  {
-    name: "Priya Mehta",
-    role: "Head of Event Design",
-    img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80&auto=format&fit=crop",
-  },
-  {
-    name: "Arjun Kapoor",
-    role: "Lead Decorator & Stylist",
-    img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80&auto=format&fit=crop",
-  },
-];
+// const team = [
+//   {
+//     name: "Ravi Sharma",
+//     role: "Founder & Creative Director",
+//     img: "/assets/4.jpeg",
+//   },
+//   {
+//     name: "Priya Mehta",
+//     role: "Head of Event Design",
+//     img: "/assets/5.jpeg",
+//   },
+//   {
+//     name: "Arjun Kapoor",
+//     role: "Lead Decorator & Stylist",
+//     img: "/assets/6.jpeg",
+//   },
+// ];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -93,13 +93,13 @@ export default function AboutSection() {
         >
           <div
             className="absolute top-0 left-0 w-3/4 h-3/4 rounded-2xl bg-cover bg-center border border-white/10 overflow-hidden"
-            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80&auto=format&fit=crop')" }}
+            style={{ backgroundImage: "url('/assets/wedding1.jpeg')" }}
           >
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/60 to-transparent" />
           </div>
           <div
             className="absolute bottom-0 right-0 w-2/3 h-2/3 rounded-2xl bg-cover bg-center border border-[#D4AF37]/20 overflow-hidden shadow-gold"
-            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&q=80&auto=format&fit=crop')" }}
+            style={{ backgroundImage: "url('/assets/Baby4.jpeg')" }}
           >
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/60 to-transparent" />
           </div>
@@ -172,7 +172,7 @@ export default function AboutSection() {
       </motion.div>
 
       {/* Team */}
-      <div className="text-center mb-12">
+      {/* <div className="text-center mb-12">
         <h3
           className="font-playfair text-3xl font-bold text-[#e5e2e1] mb-3"
           style={{ fontFamily: "var(--font-playfair)" }}
@@ -180,9 +180,9 @@ export default function AboutSection() {
           Meet the <span className="gold-gradient-text italic">Masters</span>
         </h3>
         <div className="gold-divider mt-4" />
-      </div>
+      </div> */}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {team.map((member, i) => (
           <motion.div
             key={member.name}
@@ -210,7 +210,7 @@ export default function AboutSection() {
             </div>
           </motion.div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

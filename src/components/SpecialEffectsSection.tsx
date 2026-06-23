@@ -11,7 +11,7 @@ const effects = [
     subtitle: "Indoor Sparkler Fountains",
     desc: "Safe, stunning cold sparkler fountains that shoot 2–3 metre golden cascades — the ultimate wow-moment for first dances, grand entries, and cake moments.",
     features: ["Indoor safe", "Zero heat", "Golden sparks", "Remote trigger"],
-    img: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80&auto=format&fit=crop",
+    img: "/assets/effect1.png",
     glow: "#F2CA50",
   },
   {
@@ -20,7 +20,7 @@ const effects = [
     subtitle: "Hand-Held Sparkle Cannons",
     desc: "Dramatic, hand-held pyro guns firing bursts of golden confetti and sparks — ideal for stage performances, DJ moments, and explosive crowd reactions.",
     features: ["Handheld", "Instant trigger", "Confetti bursts", "Multi-colour"],
-    img: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80&auto=format&fit=crop",
+    img: "/assets/effect2.png",
     glow: "#D4AF37",
   },
   {
@@ -29,7 +29,7 @@ const effects = [
     subtitle: "Low-Fog & Atmospheric CO₂",
     desc: "Ethereal low-lying fog and CO₂ cryo jets that create a magical 'dancing on clouds' illusion — perfect for first dances, grand entries, and photo moments.",
     features: ["Low-fog system", "CO₂ cryo jets", "Zero residue", "Instant effect"],
-    img: "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=800&q=80&auto=format&fit=crop",
+    img: "/assets/effect3.png",
     glow: "#e5e2e1",
   },
   {
@@ -38,7 +38,7 @@ const effects = [
     subtitle: "Cinematic Arrival Experiences",
     desc: "Choreographed grand entries with flower tunnels, petal showers, spotlight walks, drum processions, and complete smoke-and-pyro synergy — your entrance, unforgettable.",
     features: ["Flower tunnels", "Petal showers", "Drum dhol", "Spotlight sync"],
-    img: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80&auto=format&fit=crop",
+    img: "/assets/effect4.png",
     glow: "#F2CA50",
   },
 ];
